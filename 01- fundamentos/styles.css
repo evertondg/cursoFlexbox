@@ -1,0 +1,37 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  /*  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  */
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.box {
+  width: 90px;
+  height: 60px;
+  margin: 5px;
+}
+
+.green {
+  background: #0f0;
+  order: 1;
+}
+
+.blue {
+  background: #00f;
+  order: 2;
+}
+
+.red {
+  background: #f00;
+  order: 0;
+}
