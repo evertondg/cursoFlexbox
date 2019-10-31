@@ -29,7 +29,9 @@ header#main-header {
   height: 46px;
   background: #ffffff;
   padding: 0 30px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1;
 }
 header#main-header .content {
   display: flex;
@@ -94,4 +96,95 @@ header#main-header div.side input {
   border-radius: 16px;
   font-size: 12px;
   background: #f5f8fa url('./images/search.png') no-repeat 180px;
+}
+
+div.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 380px;
+  width: 100%;
+  background: #3bb9e3;
+  color: #e6ecf0;
+}
+
+div.bar {
+  height: 59px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+div.bar .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 285px;
+  height: 100%;
+}
+
+div.bar .content ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+
+div.bar .content ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  position: relative;
+}
+
+div.bar .content ul li.active::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #0c9ac5;
+}
+
+div.bar .content ul li span {
+  color: #667580;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+div.bar .content ul li strong {
+  color: #667580;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+div.bar .content ul li.active strong {
+  color: #0c9ac5;
+}
+
+div.bar .content .actions {
+  display: flex;
+}
+
+div.bar .content .actions button {
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  font-size: 14px;
+  font-weight: bold;
+  background: #fff;
+  color: #0c9ac5;
+  border: 2px solid #0c9ac5;
+  border-radius: 16px;
+  margin-right: 20px;
+}
+
+div.wrapper-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
