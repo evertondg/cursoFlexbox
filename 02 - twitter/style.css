@@ -105,7 +105,9 @@ div.banner {
   justify-content: center;
   height: 380px;
   width: 100%;
-  background: #3bb9e3;
+  /*background: #3bb9e3;*/
+  background: #000 url('./images/sitio.jpg') no-repeat center;
+  background-size: cover;
   color: #e6ecf0;
 }
 
